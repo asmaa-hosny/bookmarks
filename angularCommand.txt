@@ -1,0 +1,43 @@
+to check in node installed 
+	cmd  ====> node -v 
+to check if npm installed 
+	cmd ===> npm -v
+3- npm install @angular/cli
+
+4- ng new angular8project 
+
+5- npm install bootstarp --save
+
+ add the following code inside the angular.json file.
+
+"styles": [  
+   "src/styles.css",  
+   "./node_modules/bootstrap/dist/css/bootstrap.min.css"  
+ ],
+6- ng serve 
+7- ng g c first --skipTests=true
+------------------
+commands in cd :
+1- cd.. to back 
+2- mkdir newfolder 
+2- cd newfolder ===> c>newfolder>
+-----------------------------------------Kill port 4200 ------------ 
+Port number 4200 is already in use. when i want to kill any port 
+Open the cmd as administrator. Type below command in cmd:
+
+1- 	netstat -a -n -o
+And then, find port with port number 4200 by right click on terminal and click find, enter 4200 in "find what" and click "find next": Let say you found that port number 4200 is used by pid 18932. Type below command in cmd:
+
+taskkill -f /pid (pid for this port)
+
+
+
+
+
+
+
+
+
+  
+
+

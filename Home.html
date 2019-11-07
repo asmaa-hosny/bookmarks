@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Build a survey</title>
+</head>
+ <style>
+ 	.all{
+ 		margin: auto ; 
+ 		text-align: center;
+ 		width:50%;
+ 		background-color: #ccffff;
+ 		height: 50%; 
+ 	}
+ </style>
+<body>
+
+<div class="all">
+	<h2>PMO Survey</h2>
+	<p>The select element defines a drop-down list:</p>
+
+	<form >
+	  <select  id="PMOSurveySelector">
+	    <option value="PMO">PMO</option>
+	    <option value="CPMP">CPMP</option>
+	    <option value="SPCM">SPCM</option>
+	    <option value="other">Other</option>
+	  </select>
+	  <div id="container"></div>
+	  <br><br>
+	  <input type="submit">
+	</form>
+</div>
+
+
+
+
+
+<script>
+	var PMOSelector = document.getElementById("PMOSurveySelector");
+	PMOSelector.addEventListener("change", function() {
+	var container = document.getElementById("container");
+		 container.style.display="none";
+	 if(PMOSelector.value == "other")
+
+    	{
+    	var	input = document.createElement("input");
+         input.type = "text";
+         input.name = "OtherCertification";
+         container.appendChild(input);     
+         container.style.display="block";
+   	    }
+
+});
+</script>
+</body>
+</html>
